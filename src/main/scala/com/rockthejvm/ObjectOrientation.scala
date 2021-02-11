@@ -43,4 +43,9 @@ object ObjectOrientation extends App {
   // the most derived method will be called at RUNTIME
   // at compile time, the method will be called from ANIMAL
   aDeclaredAnimal.eat()
+
+  abstract class WalkingAnimal {
+    val hasLegs = true
+    def walk(): Unit
+  }
 }
