@@ -14,21 +14,27 @@ object ObjectOrientation extends App {
   }
   val anAnimal = new Animal
 
+
   // inheritance
   // has all methods and members from animals
   // class definition WITH arguments will also specify constructor
   // constructor arguments are NOT fields
   // constructor arguments are ephemeral an scope is inside class code block
-  class Dog(name: String) extends Animal
+  // class Dog(name: String) extends Animal
   // val aDog = new Dog("Lassie")
   // aDog.name will fail, name does not persist
+  class Pet extends Animal {
+    // class member
+    val knowsTricks = false
 
-  // need to add VAL to promote name to class field/member
-  class Cat(val name: String) extends Animal
+    // methods
+    def doTrick(): Unit = if (knowsTricks) println("Nice trick!") else println("No tricks known")
+  }
+
+  class Dog(val name: String) extends Pet
+  class Cat(val name: String) extends Pet
+
   val aCat = new Cat("Garfield")
   println(aCat.name)
-
-  // subtype polymorphism
-
 
 }
