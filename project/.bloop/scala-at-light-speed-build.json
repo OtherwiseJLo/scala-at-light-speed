@@ -21,7 +21,6 @@
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-relation_2.12/1.3.2/util-relation_2.12-1.3.2.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/main-settings_2.12/1.3.4/main-settings_2.12-1.3.4.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.2/util-interface-1.3.2.jar",
-            "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-21-464e4ec4/sbt-bloop-1.4.6-21-464e4ec4.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.12/0.4.0/ssl-config-core_2.12-0.4.0.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/librarymanagement-ivy_2.12/1.3.0/librarymanagement-ivy_2.12-1.3.0.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/logic_2.12/1.3.4/logic_2.12-1.3.4.jar",
@@ -95,6 +94,7 @@
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/run_2.12/1.3.4/run_2.12-1.3.4.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/com/eed3si9n/sjson-new-murmurhash_2.12/0.8.3/sjson-new-murmurhash_2.12-0.8.3.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/command_2.12/1.3.4/command_2.12-1.3.4.jar",
+            "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-15-209c2a5c/sbt-bloop-1.4.6-15-209c2a5c.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/scripted-plugin_2.12/1.3.4/scripted-plugin_2.12-1.3.4.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/testing_2.12/1.3.4/testing_2.12-1.3.4.jar",
             "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/zinc-compile_2.12/1.3.1/zinc-compile_2.12-1.3.1.jar",
@@ -116,12 +116,12 @@
                 "-deprecation"
             ],
             "jars": [
-                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/jline.jar",
                 "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-compiler.jar",
+                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar",
                 "/home/jlopez/.sbt/boot/scala-2.12.10/lib/jansi.jar",
-                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar",
+                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/jline.jar",
                 "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-library.jar",
-                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-xml_2.12.jar"
+                "/home/jlopez/.sbt/boot/scala-2.12.10/lib/scala-reflect.jar"
             ],
             "analysis": "/home/jlopez/git/scala-at-light-speed/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
             "setup": {
@@ -205,12 +205,12 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.4.6-21-464e4ec4",
+                    "version": "1.4.6-15-209c2a5c",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-21-464e4ec4/sbt-bloop-1.4.6-21-464e4ec4.jar"
+                            "path": "/home/jlopez/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6-15-209c2a5c/sbt-bloop-1.4.6-15-209c2a5c.jar"
                         }
                     ]
                 },
