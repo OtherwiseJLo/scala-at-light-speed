@@ -37,4 +37,10 @@ object ObjectOrientation extends App {
   val aCat = new Cat("Garfield")
   println(aCat.name)
 
+  // Subtype polymorphism
+  val aDeclaredAnimal: Animal = new Dog("Hachi")
+  // eat() called from Dog class, NOT the animal class
+  // the most derived method will be called at RUNTIME
+  // at compile time, the method will be called from ANIMAL
+  aDeclaredAnimal.eat()
 }
