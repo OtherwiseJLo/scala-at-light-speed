@@ -133,5 +133,7 @@ project/plugins/project/
 
 ### Scala ###
 .metals/
+.bloop/
+project/.bloop/
 # End of https://www.gitignore.io/api/sbt,java,scala,intellij
 
