@@ -130,6 +130,7 @@ object ObjectOrientation extends App {
     - sensible .equals() and .hashcode() methods
     - sensible and quick serialization (these classes are sent over wire)
     - companion object is created WITH the APPLY method
+    - incorporates pattern matching
   */
   case class Person(name: String, age: Int)
 
@@ -140,7 +141,7 @@ object ObjectOrientation extends App {
 
   // Exceptions
   /*
-
+  can take advantage of pattern matching within catch sections
   */
  try {
    val x: String = null
@@ -151,8 +152,33 @@ object ObjectOrientation extends App {
    // will execute if FAILS or SUCCEEDS
  }
 
- // Generics
+
+ // GENERICS
+ // Applicable for any type of metavariable T
+ abstract class MyList[T] {
+   def head: T
+   def tail: MyList[T]
+ }
+
+ val aList: List[Int] = List(1,2,3) // Uses apply method
+ // Equivalent to List(1,2,3)
+ val first = aList.head // type Int
+ val rest = aList.tail // List[Int]
+ val aStringList = List("hello", "world")
+ val firstString = aStringList.head // type String
+ val restString = aStringList.tail
+
+
+ // SCALA TAKEAWAYS
+ // 1) In Scala, we USUALLY operate with IMMUTABLE values/objects/collections
+ // Any MODIFICATION of an abject must return ANOTHER object
+ // Benefits:
  /*
+ 1) Works MIRACLES with multithreaded/distributed environments
+ 2) Helps making sense of the code
  */
+ val reversedList = aList.reverse
+
+ // 2) Scala is closest to Object Oriented Ideal
 
 }
