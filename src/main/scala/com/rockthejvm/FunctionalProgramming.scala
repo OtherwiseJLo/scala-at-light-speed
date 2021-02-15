@@ -56,4 +56,6 @@ object FunctionalProgramming extends App {
 
  val sugaryStringConcat: (String, String) => String = (s1: String, s2: String) => s1 + s2
  val shortStringConcat = (s1: String, s2: String) => s1 + s2
+
+ val doubler = (x: Int) => 2*x
 }
